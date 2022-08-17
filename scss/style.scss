@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(44, 51, 112);
+    background-image: url(/imagenes/modelo.jpg);
+    background-position: right;
+    background-repeat: repeat-y;
+  }
+  
+  header {
+    background-color: rgb(0, 204, 255);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .nav__list {
+    list-style-type: none;
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  
+  .nav__link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    font-size: 0;
+
+    li {
+        list-style: square;
+        list-style-position: outside;
+        padding-left: 10rem;
+        display: inline;
+        width: 25%;
+        position: relative;
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: rgba(77, 88, 255, 0.993);
+      }
+  }
+  
+  .grid-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    grid-gap: 20px;
+    grid-template-areas:
+    "header header"
+    "sidebar sidebar"
+    "content content"
+    ;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .grid-item {
+    font-size: 2rem;
+    padding: 50px 20px 20px 20px;
+    background-color: rgb(0, 204, 255);
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .grid-item-1 {
+    grid-area: header;
+  }
+  
+  .grid-item-2 {
+    grid-area: sidebar;
+  }
+  
+  .grid-item-3 {
+    grid-area: content;
+  }
+  
+  .parrafo {
+    text-align: left;
+    margin-top: 8rem;
+    text-decoration: underline;
+    font-size: large;
+    padding-left: 8rem;
+  }
+  
+  
+  h1 {
+    border-top: 5px solid black;
+    border-right: 5px solid white;
+    border-bottom: 5px solid black;
+    border-left: 5px solid white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    width: fit-content;
+    border-style: double;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  
+  section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  
+  .video {
+    margin-top: 8rem;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: rgb(0, 204, 255);
+    color: rgb(252, 252, 252);
+  }
